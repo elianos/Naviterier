@@ -1,0 +1,64 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="scheme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="info">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:int" name="difficulty"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="points">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="point" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="location" nillable="true" minOccurs="0" maxOccurs="1" >
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:double" name="longitude"/>
+                          <xs:element type="xs:double" name="latitude"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element type="xs:long" name="id"/>
+                    <xs:element type="xs:string" name="keywords"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="connections">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="connection" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:long" name="from" />
+                    <xs:element type="xs:long" name="to" />
+                    <xs:element type="xs:int" name="type" minOccurs="0" maxOccurs="1" />
+                    <xs:element type="xs:int" name="difficulty" minOccurs="0" maxOccurs="1" />
+                    <xs:element type="xs:int" name="distance" minOccurs="0" maxOccurs="1" />
+                    <xs:element name="steps">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="step" maxOccurs="unbounded" minOccurs="0"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<contacts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://naviterier.appspot.com/contacts_scheme.xsd">
+	<list>
+		<contact>
+			<name>Vrátný</name>
+			<phone>+420608911868</phone>
+			<description>Otevírá dveře na zavolání</description>
+		</contact>
+		<contact>
+			<name>Pepa Hamut</name>
+			<phone>+420608911868</phone>
+			<description>Nevolat</description>
+		</contact>
+	</list>
+</contacts>

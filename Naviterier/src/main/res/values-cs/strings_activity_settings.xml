@@ -1,0 +1,13 @@
+<resources>
+    <string name="title_activity_settings">Nastavení</string>
+
+
+    <string name="trace_recording">Zaznamenávat trasu</string>
+
+    <string name="auto_data_sending">Automatické odesílání dat</string>
+    <string name="sending_only_wifi">Zasílat pouze přes wifi</string>
+    <string name="send_data">Zaslat data</string>
+    <string name="sos_phone_number">Telefoní číslo pro SOS sms</string>
+    <string name="phone_number">Telefoní číslo</string>
+
+</resources>

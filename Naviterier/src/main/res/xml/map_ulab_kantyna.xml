@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://naviterier.appspot.com/scheme.xsd">
+	
+	<info>
+		<name>Testovací mapa budova E</name>
+		<description>Budova ČVUT na Karlově náměstí Blok E Fakulta Elektrotechnická. Jedná se o historickou budovu. Budova je velmi rozmanitá. Nachází se zde několik různých typů schodišť. Mnoho zavřených dveří se otevírá pomocí čipové karty, kterou je nutné přiložit ke čtečce karet a po krátkém pípnutí otevřít. Na otevření dveří je limit asi 5 sekund od pípnutí, jinak je nutné znovu použít kartu. Čtečka karet je malá krabička 10 krát 5 krát 3 cm. V budově se také můžete setkat s mnoha dveřmi, které jsou označeny jako většinou otevřené. Tyto dveře je proto možné snadno minout. Požární hlásič není možné nechtěně omylem spustit.</description>
+		<difficulty>2</difficulty>
+	</info>
+	<points>
+		<point>
+			<description>Část chodby asi 8 metrů dlouhá. Chodba je na konci zalomená vpravo. Před zalomením chodby jsou dveře většinou otevřené.</description>
+			<id>0</id>
+			<keywords>Ulab</keywords>
+		</point>
+
+		<point>
+			<description>Chodba asi 25 metrů dlouhá. Vlevo jsou dveře kanceláří vpravo jsou okna a nábytek. Na konci chodby jsou plechové dveře se skleněnou výplní. POZOR na stěně vlevo visí hasicí přístroj a telefon v úrovni hlavy.</description>
+			<id>1</id>
+			<keywords>Hlavní schodiště 3. patro</keywords>
+		</point>
+
+		<point>
+			<description>Plošina třetího patra zadního schodiště. POZOR vlevo jsou schody dolů. Vpravo jsou schody nahoru. Před tebou jsou dveře výtahu, které se otevírají k sobě. Tlačítko na přivolání je vlevo asi  170cm vysoko.</description>
+			<id>2</id>
+			<keywords>Výtah 3. patro</keywords>
+		</point>
+
+
+		<point>
+			<description>Plošina čtvrtého patra zadního schodiště. POZOR vpravo za tebou jsou schody dolů. Před tebou jsou dřevěné dveře, které se otevírají k sobě.
+Dojdi ke dveřím.</description>
+			<id>3</id>
+			<keywords>Výtah 4. patro</keywords>
+		</point>
+
+
+		<point>
+			<description>Otevřený prostor ve čtvrtém patře. POZOR nacházejí se zde trámy v úrovni hlavy. Na podlaze asi 5 metrů před tebou je umělá vodicí linie vedoucí vlevo přes celý otevřený prostor.</description>
+			<id>4</id>
+			<keywords>Vestibul 4. patro</keywords>
+		</point>
+
+
+		<point>
+			<description>Přímé schodiště s krátkým mezipatrem.</description>
+			<id>5</id>
+			<keywords>Hlavní schodiště 4. patro</keywords>
+		</point>
+
+
+		<point>
+			<description>Plošina prvního patra. Vpravo dveře do chodby většinou otevřené. Vlevo na konci plošiny dveře do chodby. Po levé ruce za tebou chodba ke kantýně. POZOR snížený strop, překážka ve výšce asi 180cm.</description>
+			<id>6</id>
+			<keywords>Hlavní schodiště 1. patro</keywords>
+		</point>
+
+
+		<point>
+			<description>Plošina prvního patra. Vpravo dveře do chodby většinou otevřené. Vlevo na konci plošiny dveře do chodby. Po levé ruce za tebou chodba ke kantýně. POZOR snížený strop, překážka ve výšce asi 180cm.</description>
+			<id>7</id>
+			<keywords>Kantýna</keywords>
+		</point>
+
+	</points>
+	<connections>
+		<connection>
+			<from>0</from>
+			<to>1</to>
+			<distance>1</distance>
+			<steps>
+				<step>Dojdi k zalomení na konci chodby a otoč se vpravo.</step>
+				<step>Chodba asi 25 metrů dlouhá. Vlevo jsou dveře kanceláří vpravo jsou okna a nábytek. Na konci chodby jsou plechové dveře se skleněnou výplní. POZOR na stěně vlevo visí hasicí přístroj a telefon v úrovni hlavy.</step>
+				<step>Dojdi ke dveřím na konci chodby.</step>
+				<step>Dveře se otvírají na kartu. Čtečka je na plechovém panelu vlevo od dveří. POZOR vpravo za dveřmi jsou schody dolů.</step>
+				<step>Projdi dveřmi.</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>1</from>
+			<to>2</to>
+			<distance>1</distance>
+			<steps>
+				<step>Dojdi ke dveřím před tebou na opačném konci plošiny.</step>
+				<step>Dveře se otvírají na kartu. Čtečka je na stěně vpravo od dveří.</step>
+				<step>Projdi dveřmi.</step>
+				<step>Část chodby asi 6 metrů dlouhá. Vlevo jsou dveře učebny vpravo skříně. Na konci chodby jsou plechové dveře se skleněnou výplní, většinou otevřené.</step>
+				<step>Dojdi ke dveřím na konci části chodby.</step>
+				<step>Plechové dveře se skleněnou výplní, většinou otevřené.</step>
+				<step>Projdi dveřmi.</step>
+				<step>Část chodby asi 25 metrů dlouhá. Vlevo jsou dveře učeben vpravo okna a nábytek. Na konci chodby jsou plechové dveře se skleněnou výplní většinou otevřené.</step>
+				<step>Dojdi ke dveřím na konci části chodby.</step>
+				<step>Plechové dveře se skleněnou výplní, většinou otevřené.</step>
+				<step>Projdi dveřmi a otoč se vpravo.</step>
+				<step>Chodba asi 5 metrů dlouhá. Vlevo je výklenek s dveřmi a toalety, vpravo jsou okna a nábytek. Na konci chodby jsou dřevěné dveře.</step>
+				<step>Dojdi ke dveřím na konci chodby.</step>
+				<step>Dveře se otvírají na kartu. Čtečka je na stěně vlevo od dveří. POZOR vlevo za dveřmi jsou schody dolů.</step>
+				<step>Projdi dveřmi. POZOR vlevo za dveřmi jsou schody dolů.</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>2</from>
+			<to>3</to>
+			<distance>1</distance>
+			<steps>
+				<step>Přivolej výtah a nastup.</step>
+				<step>Výtah u zadního schodiště. POZOR není vybaven vnitřními dveřmi, drž se dál od dveří. Ovládání je vpravo za dveřmi. Tlačítka jsou pod sebou, dole je zvonek a stop, pak následuje suterén, přízemí a první až čtvrté patro.</step>
+				<step>Dojeď do čtvrtého patra a vystup. POZOR za dveřmi výtahu jsou vpravo schody dolů.</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>3</from>
+			<to>4</to>
+			<distance>1</distance>
+			<steps>
+				<step>Dojdi ke dveřím.</step>
+				<step>Dveře se otvírají na kartu. Čtečka je na stěně vlevo od dveří. Vedle čtečky je také hlásič požáru a vypínač světel. POZOR za tebou jsou schody dolů.</step>
+				<step>Projdi dveřmi a vyjdi po schodech na horu. POZOR schody jsou hned za dveřmi.</step>
+				<step>Část chodby asi 8 metrů dlouhá. Vpravo výklenek s toaletami a dveře kanceláře. Chodba je na konci zalomená vlevo. POZOR podkrovní prostor, vlevo je  šikmý snížený strop.</step>
+				<step>Dojdi k zalomení chodby a otoč se vlevo.</step>
+				<step>Část chodby asi 15 metrů dlouhá. POZOR vlevo jsou výklenky s dvěma schody dolů. Vpravo jsou dveře kanceláří. Na konci chodby jsou dřevěné dveře.</step>
+				<step>Dojdi ke dveřím na konci chodby.</step>
+				<step>Dveře se otvírají tlačítkem. Tlačítko je na stěně vlevo od dveří. Vedle tlačítka je také hlásič požáru a vypínač světel.</step>
+				<step>Projdi dveřmi. POZOR za dveřmi jsou trámy v úrovni hlavy.</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>4</from>
+			<to>5</to>
+			<distance>1</distance>
+			<steps>
+				<step>Dojdi k vodicí linii a otoč se vlevo.</step>
+				<step>Otevřený prostor s vodicí linií. POZOR vlevo a vpravo jsou trámy v úrovni hlavy. Na konci prostoru jsou dveře. vodicí linie je na konci chodby zalomená vpravo.</step>
+				<step>Dojdi na konec otevřeného prostoru k zalomení vodicí linie a otoč se vpravo. Drž se vodicí linie.</step>
+				<step>Otevřený prostor s vodicí linií. POZOR trámy v úrovni hlavy. Na konci prostoru asi 5 metrů před tebou vpravo je schodiště dolů.</step>
+				<step>Dojdi na konec prostoru ke schodišti vpravo a otoč se vpravo. Drž se vodicí linie.</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>5</from>
+			<to>6</to>
+			<distance>1</distance>
+			<steps>
+				<step>Sejdi o patro níže.</step>
+				<step>Plošina třetího patra. POZOR po levé ruce za vámi jsou schody dolů. Vpravo od tebe jsou plechové dveře do chodby, před tebou jsou dveře do kanceláře, vlevo plechové dveře do chodby.</step>
+				<step>Otoč se o 180 stupňů vlevo a postav se ke schodišti dolů.</step>
+				<step>Přímé víceramenné schodiště s mezipatry.</step>
+				<step>Sejdi o dvě patra níže do prvního patra. Drž se zábradlí vlevo.</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>6</from>
+			<to>7</to>
+			<distance>1</distance>
+			<steps>
+				<step>Otoč se o 180 stupňu vlevo a postavse do chodby ke kantýně.</step>
+				<step>Široká chodba asi 15 metrů dlouhá. Po leve i pravé straně nábytek. POZOR snížený strop, překážka ve výšce asi 180cm.</step>
+				<step>Dojdi k prvním židlím po pravé straně.</step>
+			</steps>
+		</connection>
+	</connections>
+</scheme>

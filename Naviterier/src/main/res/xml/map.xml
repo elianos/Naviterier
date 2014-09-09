@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scheme xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://naviterier.appspot.com/scheme.xsd">
+	
+	<info>
+		<name>Nazev</name>
+		<description>Popisek mapy</description>
+		<difficulty>2</difficulty>
+	</info>
+	<points>
+		<point>
+			<location>
+				<longitude>14.4509458</longitude>
+				<latitude>50.0722572</latitude>
+			</location>
+			<description>Jizni vychod z parku</description>
+			<id>1</id>
+			<keywords>Jizni vychod</keywords>
+		</point>
+
+		<point>
+			<location>
+				<longitude>14.4498086</longitude>
+				<latitude>50.0727014</latitude>
+			</location>
+			<description>Severni vychod z parku</description>
+			<id>2</id>
+			<keywords>Severni vychod</keywords>
+		</point>
+	</points>
+	<connections>
+		<connection>
+			<from>1</from>
+			<to>2</to>
+			<type>1</type>
+			<difficulty>1</difficulty>
+			<distance>95</distance>
+			<steps>
+				<step>Jdi rovne a doprava</step>
+				<step>Jdi doprava</step>
+			</steps>
+		</connection>
+		<connection>
+			<from>2</from>
+			<to>1</to>
+			<type>2</type>
+			<difficulty>1</difficulty>
+			<steps>
+				<step>Jdi doleva</step>
+				<step>Jdi doleva a rovne</step>
+			</steps>
+		</connection>
+	</connections>
+</scheme>

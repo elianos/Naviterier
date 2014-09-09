@@ -1,0 +1,94 @@
+<resources>
+
+    <string name="app_name">Naviterier</string>
+    <string name="yes">Ano</string>
+    <string name="no">Ne</string>
+    <string name="ok">Ok</string>
+
+
+    <string name="outdoor_navigation">Navigovat venku</string>
+    <string name="indoor_navigation">Navigovat v budově</string>
+    <string name="last_navigation">Pokračovat v předchozí navigaci</string>
+    <string name="action_settings">Nastavení</string>
+
+    <string name="title_activity_outdoor_map_selection">Načíst venkovní mapu</string>
+    <string name="title_activity_outdoor_from">Odkud navigovat</string>
+    <string name="title_activity_outdoor_to">Kam navigovat</string>
+    <string name="title_activity_outdoor_navigatio">Navigace venku</string>
+    <string name="title_activity_indoor_map_selection">Načíst mapu budovy</string>
+    <string name="title_activity_indoor_from">Odkud navigovat</string>
+    <string name="title_activity_indoor_to">Kam navigovat</string>
+    <string name="title_activity_indoor_navigation">Navigace v budově</string>
+
+    <string name="no_local_copy">Neexistuje lokální kopie</string>
+    <string name="to_download">Mapa není ve vašem zařízení. Přejete si stáhnout mapu?</string>
+    <string name="download_complete">Stahování dokončeno.</string>
+    <string name="data_saved">Data byla uložena na lokální úložiště.</string>
+    <string name="download_failed">Stahování selhalo</string>
+    <string name="data_not_saved">Data nebyla uložena!</string>
+    <string name="downloading">Stahuji...</string>
+    <string name="please_wait">Prosím čekejte</string>
+
+    <string name="previous_step">Předchozí krok</string>
+    <string name="next_step">Následující krok</string>
+    <string name="repeat_step">Opakovat Krok</string>
+
+
+    <string name="navigation_drawer_open">Otevřít menu</string>
+    <string name="navigation_drawer_close">Zavřít menu</string>
+    <string name="exit_navigation">Ukončit navigaci</string>
+    <string name="call_help">Zavolat o pomoc</string>
+    <string name="send_sos_sms">Zaslat SOS sms</string>
+    <string name="test_gps_statue">Zkontrolovat stav sítě</string>
+    <string name="nav_distance">Zjistit vzdálenost</string>
+    <string name="want_send_sos_sms">Zaslat SOS sms?</string>
+    <string name="sos_sms_info">SOS sms obsahuje informace o vaší aktuální poloze.</string>
+    <string name="sms_sent">Sms odeslána</string>
+    <string name="sms_success">Sms byla úspěšně odeslána.</string>
+    <string name="finish_distance">Vzdálenost do cíle</string>
+    <string name="network_statue">Stav sítě</string>
+    <string name="really_exit">Opravdu chcete ukončit navigaci?</string>
+    <string name="title_activity_outdoor_call">Zavolat o pomoc</string>
+    <string name="stora_unavailable">Úložiště je nedostupné</string>
+    <string name="sdcard_unreadable">Z úložiště není možné číst!</string>
+    <string name="sdcard_unwritable">Na úložiště není možné zapisovat!</string>
+    <string name="point_distance">Vzdálenost k dalšímu výynamnému místu je přibližně: %d m.</string>
+    <string name="distance_to_finish">Vzdálenost do cíle je přibližně: %d m.</string>
+    <string name="c_net_status" formatted="false">Jste zaměřeny s přibližnou přesností %d m.</string>
+    <string name="gps_disable">GPS je neaktivní</string>
+    <string name="gps_want_to_start">Přejete si aktivovat GPS?</string>
+    <string name="service_unavailable">Služba je nedostupná</string>
+    <string name="point_distance_unavailable">Vzdálenost k dalšímu významnému místu není dostupná.</string>
+    <string name="file_not_exist">Soubor neexistuje</string>
+    <string name="maps_list_unavailable">Seznam map neexistuje, vyčkejte na jeho stažení ze serveru!</string>
+    <string name="map_not_exist">Mapa neexistuje!</string>
+    <string name="marshalling_exception">Nevalidní soubor</string>
+    <string name="map_invalid_xml">Xml soubor mapy neodpovídá schématu!</string>
+    <string name="list_invalid_xml">Xml soubor seznamu map neodpovídá schématu!</string>
+    <string name="navigation_inposible">Není možné navigovat</string>
+    <string name="same_from_to">Neni možné navigovat do stejného bodu.</string>
+    <string name="outdoor_sms_message" formatted="false">Ztratil jsem se na ceste z %s do %s pri vylete po %s. Moje soucasna GPS souradnice je: %f, %f. Prosim pomoc.</string>
+    <string name="contact_xml_invalid">Xml soubor kontaktů neodpovídá schématu!</string>
+    <string name="navigation_start">Navigace spuštěna</string>
+    <string name="navigation_instruction">Pro otevření menu s další funkcionalitou přejeďte dvěma prsty z leva do prava.</string>
+    <string name="contacts_not_exist">Kontakty neexistují!</string>
+    <string name="title_activity_indoor_navigatio">Indoor navigation</string>
+    <string name="path_wasnt_find">Trasa nenalezena!</string>
+    <string name="problem_with_scheme">Pravděpodobně se jedná o problém mapy.</string>
+    <string name="unable_to_download_scheme">Nepodařilo se stáhnout seznam map.</string>
+    <string name="map_scheme_downloaded">Seznam map byl stažen.</string>
+    <string name="maps_list_unavailable_exit">Seznam map neexistuje.</string>
+    <string name="filtering">Filtrování</string>
+    <string name="filtering_tutor">Textové pole nahoře slouží k filtrování seznamu.</string>
+    <string name="navigation_done">Navigace dokončena</string>
+    <string name="want_navigate_to">Dorazili jste do cíle. Chcete navigovat na další místo?</string>
+    <string name="updating_list">Aktualizuji seznam map.</string>
+    <string name="downloading_map_list">Stahuji seznam map</string>
+    <string name="updating_map_list">Aktualizuji seznam map</string>
+    <string name="update_complete">Aktualizace kompletní</string>
+    <string name="map_scheme_updated">Seznam map byl aktualizován</string>
+    <string name="position_checker">Služba sběru dat</string>
+    <string name="position_checker_running">Služba je spuštěna</string>
+    <string name="sms_not_send">SMS nebyla odeslána</string>
+    <string name="sms_not_send_reason">Zasílání SMS není možné, nebo bylo nastaveno špatné telefonní číslo.</string>
+</resources>

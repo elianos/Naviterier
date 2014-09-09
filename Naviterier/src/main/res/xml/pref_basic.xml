@@ -1,0 +1,33 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- A 'parent' preference, which enables/disables child preferences (below)
+         when checked/unchecked. -->
+    <CheckBoxPreference
+        android:key="trace_recording"
+        android:title="@string/trace_recording"
+        android:defaultValue="false" />
+
+    <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+    <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+    <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+    <CheckBoxPreference
+        android:dependency="trace_recording"
+        android:key="auto_trace_recording"
+        android:title="@string/auto_data_sending"
+        android:summary="@string/sending_only_wifi"
+        android:defaultValue="content://settings/system/notification_sound" />
+
+    <Preference
+        android:dependency="trace_recording"
+        android:title="@string/send_data"
+        android:key="send_data">
+        <!--<intent android:action="android.settings.SYNC_SETTINGS" />-->
+    </Preference>
+
+    <EditTextPreference
+        android:key="sos_phone_number"
+        android:title="@string/sos_phone_number"
+        android:defaultValue="@string/phone_number"
+        android:phoneNumber="true" />
+
+</PreferenceScreen>

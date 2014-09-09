@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="outdoor">outdoor</string>
+    <string name="scheme_name">scheme_name</string>
+    <string name="scheme_type">scheme_type</string>
+    <string name="scheme_from">scheme_from</string>
+    <string name="scheme_to">scheme_to</string>
+    <string name="current_connection">current_connection</string>
+    <string name="current_step">current_step</string>
+    <string name="class_name">class_name</string>
+</resources>

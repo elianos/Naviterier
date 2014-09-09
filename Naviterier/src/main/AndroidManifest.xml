@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cz.cvut.fel.jinocvla.naviterier"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.settings.SettingsActivity"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorMapSelection"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_outdoor_map_selection"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorFrom"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_outdoor_from"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorMapSelection"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorMapSelection" />
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorTo"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_outdoor_to"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorFrom"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorFrom" />
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorNavigation"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_outdoor_navigatio"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorTo"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorTo" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.NAVIGATION" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.main.CallActivity"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_outdoor_call"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.indoor.IndoorMapSelection"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_indoor_map_selection"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.indoor.IndoorFrom"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_indoor_from"
+            android:parentActivityName=".activities.indoor.IndoorMapSelection"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.indoor.IndoorMapSelection" />
+        </activity>
+        <activity
+            android:name="cz.cvut.fel.jinocvla.naviterier.activities.indoor.IndoorTo"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_indoor_to"
+            android:parentActivityName=".activities.indoor.IndoorFrom"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.indoor.IndoorFrom" />
+        </activity>
+        <activity
+            android:name=".activities.indoor.IndoorNavigation"
+            android:icon="@drawable/ic_action_name"
+            android:label="@string/title_activity_indoor_navigatio"
+            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
+
+            <intent-filter>
+                <category android:name="android.intent.category.NAVIGATION" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="cz.cvut.fel.jinocvla.naviterier.activities.main.PositionCheckerService" >
+        </service>
+
+    </application>
+
+</manifest>

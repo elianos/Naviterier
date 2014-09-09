@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://naviterier.appspot.com/schemes.xsd">
+	<list>
+		<scheme name="Mapa 1" url="http://naviterier.appspot.com/map.xml" fileName="map.xml" />
+		<scheme name="Mapa 2" url="http://naviterier.appspot.com/map_2.xml" fileName="map_2.xml" />
+	</list>
+</schemes>

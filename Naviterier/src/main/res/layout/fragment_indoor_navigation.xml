@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="cz.cvut.fel.jinocvla.naviterier.activities.indoor.IndoorNavigation$PlaceholderFragment"
+    android:id="@+id/indoor_navigation_context"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@android:color/black"
+        android:weightSum="1">
+
+        <TextView
+            android:text=""
+            android:id="@+id/current_step"
+            android:padding="@dimen/activity_vertical_margin"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="0.5"/>
+
+        <LinearLayout android:layout_weight="0.25" android:weightSum="1" android:layout_height="0dp">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/previous_step"
+                android:id="@+id/btn_previous"
+                android:background="@drawable/btn_main"
+                android:focusable="true"
+                android:layout_column="0"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:gravity="bottom|left"
+                android:textSize="16dp"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/next_step"
+                android:id="@+id/btn_next"
+                android:background="@drawable/btn_main"
+                android:focusable="true"
+                android:layout_weight="0.5"
+                android:layout_column="1"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="1dp"
+                android:gravity="bottom|left"
+                android:textSize="16dp" />
+        </LinearLayout>
+        <LinearLayout android:layout_weight="0.25" android:weightSum="1" android:layout_height="0dp">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/repeat_step"
+                android:id="@+id/btn_current"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:background="@drawable/btn_main"
+                android:focusable="true"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="1dp"
+                android:gravity="bottom|left"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </TableLayout>
+</RelativeLayout>

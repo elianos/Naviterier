@@ -1,0 +1,48 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.9.+'
+    }
+}
+apply plugin: 'android'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion '19.0.0'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 19
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("./debug.keystore")
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:19.0.0'
+    compile 'com.google.code.gson:gson:1.7.1'
+    compile 'com.spothero.volley:volley-jackson-extension:1.0.1@jar'
+    compile 'com.github.rwl:jtransforms:2.4.0@jar'
+    compile 'org.apache.commons:commons-io:1.3.2@jar'
+    compile 'org.simpleframework:simple-xml:2.7@jar'
+}

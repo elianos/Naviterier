@@ -1,0 +1,13 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+
+    <string name="trace_recording">Trace recording</string>
+
+    <string name="auto_data_sending">Automatical data sending</string>
+    <string name="sending_only_wifi">Sending only on wifi</string>
+    <string name="send_data">Send data</string>
+    <string name="sos_phone_number">Phone number for SOS sms</string>
+    <string name="phone_number">Phone number</string>
+
+</resources>
