@@ -45,7 +45,6 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-
                 SchemeStorageService schemeStorageService = SchemeStorageServiceImpl.getInstance(MainActivity.this);
                 if (schemeStorageService.isSchemeStored(SchemeActivity.State.COMPLETE)) {
                     Intent intent;

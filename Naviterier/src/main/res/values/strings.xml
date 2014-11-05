@@ -85,5 +85,14 @@
     <string name="position_checker_running">Service is running</string>
     <string name="sms_not_send">Did not send sms</string>
     <string name="sms_not_send_reason">Sending SMS is not allowed or phone number is not valid.</string>
+    <string name="title_activity_outdoor_navigation_sec">OutdoorNavigationSec</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_outdoor_navigation_v2">OutdoorNavigationV2</string>
+    <string name="menu">Menu</string>
+    <string name="navigation">Navigation</string>
 
 </resources>

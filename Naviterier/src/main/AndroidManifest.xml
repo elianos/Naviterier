@@ -24,7 +24,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:name=".activities.main.MainActivity"
             android:icon="@drawable/ic_action_name"
             android:label="@string/app_name"
             android:launchMode="singleInstance"
@@ -36,64 +36,60 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.settings.SettingsActivity"
+            android:name=".activities.settings.SettingsActivity"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_settings"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:parentActivityName=".activities.main.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorMapSelection"
+            android:name=".activities.outdoor.OutdoorMapSelection"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_outdoor_map_selection"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:parentActivityName=".activities.main.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity" />
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorFrom"
+            android:name=".activities.outdoor.OutdoorFrom"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_outdoor_from"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorMapSelection"
+            android:parentActivityName=".activities.outdoor.OutdoorMapSelection"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorMapSelection" />
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorTo"
+            android:name=".activities.outdoor.OutdoorTo"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_outdoor_to"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorFrom"
+            android:parentActivityName=".activities.outdoor.OutdoorFrom"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorFrom" />
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorNavigation"
+            android:name=".activities.outdoor.OutdoorNavigation"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_outdoor_navigatio"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorTo"
+            android:parentActivityName=".activities.outdoor.OutdoorTo"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="cz.cvut.fel.jinocvla.naviterier.activities.outdoor.OutdoorTo" />
-
-            <intent-filter>
-                <category android:name="android.intent.category.NAVIGATION" />
-            </intent-filter>
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.main.CallActivity"
+            android:name=".activities.main.CallActivity"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_outdoor_call"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:parentActivityName=".activities.main.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -103,7 +99,7 @@
             android:name=".activities.indoor.IndoorMapSelection"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_indoor_map_selection"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:parentActivityName=".activities.main.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -120,7 +116,7 @@
                 android:value="cz.cvut.fel.jinocvla.naviterier.activities.indoor.IndoorMapSelection" />
         </activity>
         <activity
-            android:name="cz.cvut.fel.jinocvla.naviterier.activities.indoor.IndoorTo"
+            android:name=".activities.indoor.IndoorTo"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_indoor_to"
             android:parentActivityName=".activities.indoor.IndoorFrom"
@@ -133,7 +129,7 @@
             android:name=".activities.indoor.IndoorNavigation"
             android:icon="@drawable/ic_action_name"
             android:label="@string/title_activity_indoor_navigatio"
-            android:parentActivityName="cz.cvut.fel.jinocvla.naviterier.activities.main.MainActivity"
+            android:parentActivityName=".activities.main.MainActivity"
             android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -144,7 +140,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="cz.cvut.fel.jinocvla.naviterier.activities.main.PositionCheckerService" >
+        <service android:name=".activities.main.PositionCheckerService" >
         </service>
 
     </application>

@@ -91,4 +91,6 @@
     <string name="position_checker_running">Služba je spuštěna</string>
     <string name="sms_not_send">SMS nebyla odeslána</string>
     <string name="sms_not_send_reason">Zasílání SMS není možné, nebo bylo nastaveno špatné telefonní číslo.</string>
+    <string name="menu">Menu</string>
+    <string name="navigation">Navigace</string>
 </resources>
